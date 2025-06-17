@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Checkout</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>ShopNow</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="cart.html">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+<form id="checkout-form">
+  <input type="text" id="name" placeholder="Full Name" required />
+  <input type="email" id="email" placeholder="Email" required />
+  <input type="text" id="address" placeholder="Address" required />
+  <button type="submit">Place Order</button>
+</form>
+
+<div id="confirmation-modal" style="display:none;">
+  <h2>Order Confirmed!</h2>
+  <p>Thank you for your purchase.</p>
+</div>
+
+<script>
+  document.getElementById("checkout-form").addEventListener("submit", function (e) {
+    e.preventDefault();
+    // Normally you'd validate each field manually here
+
+    localStorage.removeItem("cart");
+    document.getElementById("confirmation-modal").style.display = "block";
+  });
+</script>
+</body>
+</html>
