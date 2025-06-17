@@ -1,28 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>ShopNow | Home</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audiophile | Home</title>
   <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header>
-    <nav>
-      <h1>ShopNow</h1>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="cart.html">Cart</a></li>
-      </ul>
+    <nav class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">audiophile</h1>
+        <ul class="nav-menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#headphones">Headphones</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#earphones">Earphones</a></li>
+        </ul>
+        <div class="cart-icon">
+          <img src="assets/icons/icon-cart.svg" alt="Cart" />
+        </div>
+      </div>
+      <hr />
     </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="new-product">NEW PRODUCT</p>
+        <h2>XX99 MARK II HEADPHONES</h2>
+        <p>Experience natural, lifelike audio and exceptional build quality for passionate music enthusiast.</p>
+        <a href="#" class="btn btn-primary">SEE PRODUCT</a>
+      </div>
+      <div class="hero-image">
+        <img src="assets/home/desktop/image-hero.jpg" alt="XX99 Headphones" />
+      </div>
+    </section>
   </header>
 
-  <main>
-    <section id="products" class="product-grid">
-      <!-- Products will be injected via JS -->
-    </section>
-  </main>
-
-  <script src="js/app.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
