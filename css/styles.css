@@ -1,48 +1,94 @@
-body {
+/* Reset and base */
+* {
   margin: 0;
-  font-family: sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-nav {
-  background: #111;
-  color: #fff;
-  padding: 1rem;
+body {
+  font-family: 'Manrope', sans-serif;
+  line-height: 1.5;
+  background-color: #fff;
+  color: #000;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #191919;
+  color: white;
+  padding: 1.5rem 2rem;
+}
+
+.nav-container {
   display: flex;
+  align-items: center;
   justify-content: space-between;
 }
 
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin-left: 1rem;
+.logo {
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
-.product-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1rem;
-  padding: 1rem;
+.nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
 }
 
-.product-card {
-  border: 1px solid #ccc;
-  padding: 1rem;
-  transition: transform 0.2s ease;
-}
-
-.product-card:hover {
-  transform: scale(1.02);
-  border-color: #000;
-}
-
-button {
-  background-color: #000;
+.nav-menu a {
   color: white;
-  padding: 0.5rem;
-  border: none;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.cart-icon img {
+  width: 24px;
   cursor: pointer;
 }
 
-button:hover {
-  background-color: #444;
+/* Hero */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #191919;
+  color: white;
+  padding: 4rem 2rem;
+}
+
+.hero-text {
+  max-width: 40%;
+}
+
+.hero-text .new-product {
+  font-size: 0.875rem;
+  letter-spacing: 10px;
+  color: #d87d4a;
+  margin-bottom: 1rem;
+}
+
+.hero-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn-primary {
+  background-color: #d87d4a;
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem;
+  display: inline-block;
+  font-weight: bold;
+}
+
+/* Hero image */
+.hero-image img {
+  max-width: 400px;
+  width: 100%;
 }
