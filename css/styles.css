@@ -1188,6 +1188,21 @@ img.arrow-icon {
  
 }
 
+@media (min-width: 769px) {
+  #mobileMenu {
+    display: none !important;
+  }
+
+  #mobileMenuBackdrop {
+    display: none !important;
+  }
+
+  .hamburger {
+    display: none;
+}
+
+}
+
  @media (min-width: 900px) {
   .checkout-container {
     flex-direction: row;
