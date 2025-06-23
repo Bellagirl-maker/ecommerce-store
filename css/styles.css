@@ -207,7 +207,6 @@ body.checkout-page {
 
 .product-image {
   width: 150px;
-  margin-top: -75px;
 }
 
 .category-card h3 {
@@ -251,8 +250,8 @@ img.arrow-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 5rem 5rem 0;
   flex-wrap: wrap;
-  padding: 4rem 4rem;
   color: white;
 }
 
@@ -340,19 +339,19 @@ img.arrow-icon {
 
 .yx1-section {
   margin: 4rem auto;
+  padding: 4rem;
 }
 
 .yx1-feature {
   display: flex;
   align-items: stretch; 
-  justify-content: space-between;
+  gap: 2rem;
   flex-wrap: wrap;
 }
 
 .yx1-image,
 .yx1-card {
   flex: 1 1 300px;
-  max-width: 540px;
   border-radius: 8px;
   overflow: hidden;
 }
@@ -379,14 +378,14 @@ img.arrow-icon {
 }
 
 .best-audio {
-  margin: 6rem 2rem;
+  margin: 4rem 4rem;
 }
 
 .audio-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 1rem;
   flex-wrap: wrap;
 }
 
@@ -413,7 +412,7 @@ img.arrow-icon {
 
 .audio-image {
   flex: 1 1 500px;
-  max-width: 540px;
+  max-width: 450px;
 }
 
 .audio-image img {
@@ -439,13 +438,14 @@ img.arrow-icon {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 4rem;
   margin: 4rem 2rem;
+  padding: 4rem;
   flex-wrap: wrap;
 }
 
 .product-item.reverse {
   flex-direction: row-reverse;
+  gap: 4rem;
 }
 
 .product-image {
@@ -454,7 +454,7 @@ img.arrow-icon {
 
 .product-image picture,
 .product-image img {
-  width: 100%;
+  width: 90%;
   display: block;
   border-radius: 8px;
 }
@@ -1184,6 +1184,10 @@ img.arrow-icon {
   }
   .related-list {
     flex-direction: column;
+  }
+
+  .footer-logo {
+    padding-bottom: 1rem;
   }
  
 }
