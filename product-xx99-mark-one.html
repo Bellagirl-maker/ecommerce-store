@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Audiophile | Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/favicon-32x32.png" type="image/png">
+</head>
+<body>
+  <header>
+    <nav class="navbar" aria-label="Main Navigation">
+    <!-- Hamburger -->
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+      <img src="assets/shared/tablet/icon-hamburger.svg" alt="Menu icon">
+    </div>
+
+    <!-- Logo -->
+    <a href="index.html"><h1 class="logo">audiophile</h1></a>
+
+    <!-- Desktop nav menu -->
+    <ul class="nav-menu desktop-menu">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="headphones.html">HEADPHONES</a></li>
+      <li><a href="speakers.html">SPEAKERS</a></li>
+      <li><a href="earphones.html">EARPHONES</a></li>
+    </ul>
+
+    <!-- Mobile nav menu -->
+    <div class="nav-menu-wrapper" id="mobileMenu">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="headphones.html">HEADPHONES</a></li>
+        <li><a href="speakers.html">SPEAKERS</a></li>
+        <li><a href="earphones.html">EARPHONES</a></li>
+      </ul>
+    </div>
+    <!-- Cart icon -->
+    <div class="cart-icon">
+      <img src="assets/shared/desktop/icon-cart.svg" alt="Shopping cart icon" />
+    </div>
+  </nav>
+<!-- Backdrop for mobile -->
+<div id="mobileMenuBackdrop" class="mobile-backdrop"></div>
+  </header>
+<main>
+    <div class="go-back-wrapper">
+  <a href="javascript:history.back()" class="go-back">Go Back</a>
+   </div>
+<section class="product-hero">
+    <div class="hero-image">
+      <picture>
+        <source media="(max-width: 767px)" srcset="assets/product-xx99-mark-one-headphones/mobile/image-product.jpg" />
+        <source media="(max-width: 1024px)" srcset="assets/product-xx99-mark-one-headphones/tablet/image-product.jpg" />
+        <img src="assets/product-xx99-mark-one-headphones/desktop/image-product.jpg" alt="XX99 Mark I Headphones" />
+      </picture>
+    </div>
+    <div class="hero-text">
+      <h1>XX99 Mark I Headphones</h1>
+      <p class="description">
+        As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio reproduction for audiophiles who want to enjoy balanced frequency response with fine tuning control.
+      </p>
+      <p class="price">$1,750</p>
+      <div class="quantity-cart">
+        <div class="quantity-selector">
+          <button class="qty-btn minus">–</button>
+          <span class="qty-value">1</span>
+          <button class="qty-btn plus">+</button>
+        </div>
+        <button class="btn btn-primary cart-btn" data-slug="xx99-mark-one-headphones">Add to Cart</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features & In-The-Box -->
+  <section class="product-details">
+    <div class="features">
+      <h2>Features</h2>
+      <p>
+        Featuring an open-back design and premium build materials, the XX99 Mark I delivers clarity and deep bass, wrapped in an elegant aesthetic suited for dedicated audiophiles.
+      </p>
+    </div>
+    <div class="in-the-box">
+      <h2>In the Box</h2>
+      <ul>
+        <li><span>1x</span> Headphone Unit</li>
+        <li><span>2x</span> Replacement Earcups</li>
+        <li><span>1x</span> User Manual</li>
+        <li><span>1x</span> 3.5mm 5m Audio Cable</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section class="gallery">
+    <img src="assets/product-xx99-mark-one-headphones/desktop/image-gallery-1.jpg" alt="">
+    <img src="assets/product-xx99-mark-one-headphones/desktop/image-gallery-2.jpg" alt="">
+    <img src="assets/product-xx99-mark-one-headphones/desktop/image-gallery-3.jpg" alt="">
+  </section>
+
+  <!-- You May Also Like -->
+  <section class="related-products">
+    <h2>You May Also Like</h2>
+    <div class="related-list">
+      <div class="related-item">
+        <img src="assets/shared/desktop/image-xx99-mark-two-headphones.jpg" alt="XX99 Mark II Headphones">
+        <h3>XX99 Mark II</h3>
+        <a href="product-xx99-mark-two-headphones.html" class="btn btn-outline">See Product</a>
+      </div>
+      <div class="related-item">
+        <img src="assets/shared/desktop/image-xx59-headphones.jpg" alt="XX59 Headphones">
+        <h3>XX59</h3>
+        <a href="product-xx59-headphones.html" class="btn btn-outline">See Product</a>
+      </div>
+      <div class="related-item">
+        <img src="assets/shared/desktop/image-zx7-speaker.jpg" alt="ZX7 Speaker">
+        <h3>ZX7 Speaker</h3>
+        <a href="product-zx7-speaker.html" class="btn btn-outline">See Product</a>
+      </div>
+    </div>
+  </section>
+<section class="categories">
+  <div class="category-card">
+    <img class="product-image" src="assets/shared/desktop/image-category-thumbnail-headphones.png" alt="Headphones" />
+    <h3>Headphones</h3>
+    <a href="#headphones" class="shop-link">Shop <img class="arrow-icon" src="assets/shared/desktop/icon-arrow-right.svg" alt="Right arrow icon" /></a>
+  </div>
+
+  <div class="category-card">
+    <img class="product-image" src="assets/shared/desktop/image-category-thumbnail-speakers.png" alt="Speakers" />
+    <h3>Speakers</h3>
+    <a href="#speakers" class="shop-link">Shop <img class="arrow-icon" src="assets/shared/desktop/icon-arrow-right.svg" alt="Right arrow icon" /></a>
+  </div>
+
+  <div class="category-card">
+    <img class="product-image" src="assets/shared/desktop/image-category-thumbnail-earphones.png" alt="Earphones" />
+    <h3>Earphones</h3>
+    <a href="#earphones" class="shop-link">Shop <img class="arrow-icon" src="assets/shared/desktop/icon-arrow-right.svg" alt="Right arrow icon" /></a>
+  </div>
+</section>
+<section class="best-audio">
+  <div class="audio-container">
+    <div class="audio-text">
+      <h2>Bringing you the <span>best</span> audio gear</h2>
+      <p>
+        Located at the heart of New York City, Audiophile is the premier store for high end headphones,
+        earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration rooms
+        available for you to browse and experience a wide range of our products. Stop by our store to meet
+        some of the fantastic people who make Audiophile the best place to buy your portable audio equipment.
+      </p>
+    </div>
+    <div class="audio-image">
+      <img
+        src="assets/shared/desktop/image-best-gear.jpg"
+        alt="Man wearing headphones"
+      />
+    </div>
+  </div>
+</section>
+<!-- Cart Modal -->
+<div class="cart-modal-overlay" id="cartModalOverlay"></div>
+
+<div class="cart-modal" id="cartModal">
+  <div class="cart-modal-header">
+    <h2>Cart (3)</h2>
+    <button id="clearCartBtn">Remove all</button>
+  </div>
+
+  <div class="cart-items" id="cartItems">
+    <!-- Example Item -->
+    <div class="cart-item">
+      <img src="assets/cart/image-xx99-mark-two-headphones.jpg" alt="XX99 Mark II" class="cart-item-img">
+      <div class="cart-item-details">
+        <p class="cart-item-name">XX99 MK II</p>
+        <p class="cart-item-price">$2,999</p>
+      </div>
+      <div class="cart-item-qty">
+        <button class="qty-btn minus">-</button>
+        <span class="qty">1</span>
+        <button class="qty-btn plus">+</button>
+      </div>
+    </div>
+    <!-- End Example Item -->
+  </div>
+
+  <div class="cart-modal-total">
+    <span>Total</span>
+    <span id="cartTotal">$5,396</span>
+  </div>
+
+  <a href="checkout.html" class="btn btn-primary btn-full">Checkout</a>
+</div>
+
+<footer class="site-footer">
+  <div class="footer-container">
+    <div class="footer-top">
+      <h2 class="footer-logo">audiophile</h2>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html">home</a>
+        <a href="headphones.html">headphones</a>
+        <a href="speakers.html">speakers</a>
+        <a href="earphones.html">earphones</a>
+      </nav>
+    </div>
+
+    <div class="footer-content">
+      <p class="footer-description">
+        Audiophile is an all-in-one stop to fulfill your audio needs. We’re a small team of music lovers and
+        sound specialists who are devoted to helping you get the most out of personal audio. Come and visit
+        our demo facility - we’re open 7 days a week.
+      </p>
+      <div class="footer-bottom">
+        <p class="footer-copy">Copyright 2021. All Rights Reserved</p>
+        <div class="footer-socials">
+          <a href="#"><img src="assets/shared/desktop/icon-facebook.svg" alt="Facebook" /></a>
+          <a href="#"><img src="assets/shared/desktop/icon-twitter.svg" alt="Twitter" /></a>
+          <a href="#"><img src="assets/shared/desktop/icon-instagram.svg" alt="Instagram" /></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+ <script src="js/script.js"></script>
+</main>
+</body>
+<html
