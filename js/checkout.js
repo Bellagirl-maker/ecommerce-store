@@ -49,3 +49,22 @@ function showCheckoutModal() {
   // Clear cart
   localStorage.removeItem("cart");
 }
+
+const hamburger = document.getElementById('hamburger');
+const mobileMenu = document.getElementById('mobileMenu');
+const backdrop = document.getElementById('mobileMenuBackdrop');
+
+hamburger.addEventListener('click', () => {
+  mobileMenu.classList.toggle('active');
+  backdrop.classList.toggle('active');
+  const expanded = hamburger.getAttribute('aria-expanded') === 'true';
+  hamburger.setAttribute('aria-expanded', !expanded);
+  document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : 'auto';
+});
+
+backdrop.addEventListener('click', () => {
+  mobileMenu.classList.remove('active');
+  backdrop.classList.remove('active');
+  hamburger.setAttribute('aria-expanded', 'false');
+  document.body.style.overflow = 'auto';
+});
